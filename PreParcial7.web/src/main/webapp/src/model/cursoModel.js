@@ -39,12 +39,25 @@ define(['model/_cursoModel'], function() {
               {
               validationMessage = "El programa debe tener de longitud 4";
 }
+            if(minusculas == 1)
+              {
+              validationMessage = "El programa debe tener solo mayusculas";
+          }
             if(validationMessage.length>0){
                return validationMessage;
             }
         }
 
     });
+    
+    function minusculas(texto){
+   for(i=0; i<texto.length; i++){
+      if (letras.indexOf(texto.charAt(i),0)!=-1){
+         return 1;
+      }
+   }
+   return 0;
+}
 
     App.Model.CursoList = App.Model._CursoList.extend({
         model: App.Model.CursoModel
