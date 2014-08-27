@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.edu.uniandes.csw.Sarmiento</groupId>
+  <artifactId>PreParcial7</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <name>PreParcial7</name>
+    <modules>
+    	  <module>../PreParcial7.web</module>
+    	  <module>../PreParcial7.api</module>
+		  <module>../PreParcial7.logic</module>
+		  <module>../PreParcial7.mock</module>	
+		  <module>../crudmaker.web</module>
+    </modules>
+</project>
