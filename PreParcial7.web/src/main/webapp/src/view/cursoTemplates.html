@@ -14,6 +14,7 @@
     <tr>
 		<td><%= htmlEncode(curso.getDisplay('name')) %></td>
 		<td><%= htmlEncode(curso.getDisplay('programa')) %></td>
+                <td style="text-transform:uppercase;"><%= htmlEncode(curso.getDisplay('programa')) %></td>
     <td>
     <% if(showEdit) {%>
     <a onclick="Backbone.trigger('<%= componentId %>-curso-edit',{id:<%= curso.id %>}); return false" >Edit</a> |
